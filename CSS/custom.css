@@ -1,0 +1,130 @@
+html{
+    overflow-y: scroll; 
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/paper.png);
+    background-repeat: repeat;
+    }
+
+.site-header{
+    background-image: url(../images/bbp.jpg);
+    background-size: cover;
+    background-position:center;
+
+    background-color: rgba(255, 255, 255, 0);  
+    display: block;
+    }
+
+.content{
+    margin: 5%;
+    }
+
+.socialmedia{
+    padding: 2%;
+    }
+
+.main-nav{
+    background-color: rgb(20, 20, 20);
+    margin: 0%;
+    flex-basis: auto;
+    }
+
+#headercontent {
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-style: bold;
+    color:white;
+    background-image: linear-gradient(#f6ab01, rgba(5, 71, 9, 0.082));
+    margin:0%;
+    
+    }
+.card-link{
+    color:black
+    }
+
+h2{
+    justify-items: center;
+    }
+.lead{
+    color:white;
+}
+
+.gettickets{
+    border: solid rgb(194, 126, 1);
+    box-sizing: border-box;
+    }
+.card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+
+a{
+    color:white;
+    text-decoration: none;
+
+    }
+a:hover{
+    text-decoration:none;
+    }
+
+.nav-link{
+    color:white;
+    text-decoration: none; 
+    }
+.nav-link:hover{
+    color:white;
+    background-color: #f6ad01ad;
+    text-decoration:none;
+    }
+
+.card-deck{
+    display: flex;
+    }
+.fab {
+    text-decoration: none;
+    padding: 0.5%;
+    border-radius: 50%;
+    }
+
+.fa-facebook {
+    color: white;
+    }
+
+.fa-twitter {
+    color: white;
+    }
+
+.fa-instagram {
+    color: white;
+    }
+.fab:hover {
+    opacity: 0.7;
+    }
+
+.fa-angle-up{
+    color: black;
+    }
+
+#back{
+    color:black;
+    }
+
+footer{
+    background-color:black;
+    }
+
+#footerlink{
+    color: orange;
+    }
+
+#footerlink:hover{
+    background-color: white;
+    }
