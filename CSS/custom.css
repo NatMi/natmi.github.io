@@ -44,12 +44,17 @@ body {
 .card-link{
     color:black
     }
+h1{
+    padding-top: 3%;
+    font-weight: 900
+}
 
 h2{
     justify-items: center;
     }
 .lead{
     color:white;
+    background-color: #2020204b
 }
 
 .gettickets{
@@ -68,13 +73,13 @@ h2{
         border-radius: 0.25rem;
     }
 .card-img-top{
-    height: 50rem;
+    height: 32rem;
     object-fit: cover;
 }
-.card-body{
-    background-color: black;
+.md-form{
+    padding-top:2rem;
+    color: #757575;
 }
-
 a{
     color:white;
     text-decoration: none;
@@ -129,7 +134,9 @@ a:hover{
 footer{
     background-color:black;
     }
-
+#registration{
+    padding-top:5%;
+}
 #footerlink{
     color: orange;
     }

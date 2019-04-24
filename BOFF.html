@@ -20,7 +20,7 @@
 
   <body>
     <!--Header-->
-      <nav class="main-nav text-uppercase col-sm-12 container-fluid fixed-top" >
+      <nav class="navbar main-nav text-uppercase fixed-top" >
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">About Festival</a>
@@ -55,7 +55,7 @@
     </header>
 
       <!--Movies-->
-  <div id="Program" class="container-fluid">
+  <div id="Program" class="container">
     <h1 id="5thAug" class="row col-sm-12 justify-content-center">5th August</h1>
       <section class="row">
           <div class="card col-sm-4">
@@ -188,22 +188,24 @@
 
       <!--News-->
       <div class="card-deck" style="margin: 10%" >
+          <h1  id="Announcements"class="row col-sm-12 justify-content-center">Announcements</h1>
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">News 1</h4>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h4 class="card-title">Meet accomplished filmmakers!</h4>
+              <p class="card-text">We are proud to announce that some of the famous people of film industry will visit our festival for special talks.<br>
+              Make sure to <a href="#registration"> book your free tickets</a> to have a chance of meeting them!</p>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">News 2</h4>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h4 class="card-title">Good weather reports!</h4>
+              <p class="card-text">Sunny weather will join our festival! To make sure all our guest are hydrated we'll be sharing free drinking water and our customised eco-friendly water cups. <a href="#registration"> Book your free tickets</a> to claim yours upon arrival!</p>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">News 3</h4>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h4 class="card-title">3...2...1... Registration opened!</h4>
+              <p class="card-text">From today you can <a href="#registration"> book your free tickets</a> to join our festival! Please remember that we have limited amount of participants, you might want to make the decision quickly!</p>
             </div>
           </div>
         </div>
@@ -213,27 +215,35 @@
     <!--Form-->
    </container>
         <div class=" container card" id="registration">
-
             <h5 class="card-header info-color white-text text-center py-4">
                 <strong>Registration Form</strong>
             </h5>
         
-            <div class="card-body px-lg-5 pt-0">
-        
-                <form class="md-form" style="color: #757575;">
-        <br>
-                            <input type="text" id="materialRegisterFormFirstName" class="form-control" placeholder="First name">
+            <div class="card-body">
+                <form class="md-form">
+                  <div class="row">
+                    <div class="col">
+                            <input type="text" id="FirstName" class="form-control" placeholder="First name" required>
                             <label>First name</label>
-        
-                            <input type="email" id="materialRegisterFormLastName" class="form-control">
-                            <label for="materialRegisterFormLastName">Last name</label>
-        
-                            <input type="email" id="materialRegisterFormEmail" class="form-control">
-                            <label for="materialRegisterFormEmail">E-mail</label>
-        
-                            <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-                            <label for="materialRegisterFormPhone">Phone number</label>
+                    </div>
+                    <div class="col">
+                            <input type="text" id="LastName" class="form-control" required>
+                            <label for="LastName">Last name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                            <input type="email" id="email" class="form-control"required>
+                            <label for="email">E-mail</label>
+                      </div>
+                      <div class="col">
+                            <input type="tel" id="phone" class="form-control" pattern="^\d{8}$" required>
+                            <label for="phone">Phone number (8 numeric characters)</label>
+                      </div>
+                    </div>
+
         <div class="text-center">Choose Festival Dates</div> <br>
+        
                     <div class="form-check mb-4">
                         <input type="checkbox" class="form-check-input" id="checkbox">
                         <label class="form-check-label " for="checkbox">5th August</label>
@@ -253,13 +263,22 @@
                         <input type="checkbox" class="form-check-input" id="checkbox">
                         <label class="form-check-label" for="checkbox">8th August</label>
                     </div>
-        
-                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Submit</button>
+                    
 
+                    <div class="row">
+                        <div class="col-12">
+                      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" >Submit</button>
+                        </div>
+
+                        <script>
+                            function myFunction() {
+                              alert("Submission succesful! You will receive your confirmation shortly via email.");
+                            }
+                            </script>
         
                         <hr>
         
-                        <p> After submission you will receive email confiramtion of your booking </p>
+                        <p> After submission you will receive email confirmation of your booking </p>
                     </div>
         
                 </form>
@@ -268,8 +287,7 @@
         
         </form>
         <br>
-    </container>
-  
+      </container>
 
     <footer>
 <br>
