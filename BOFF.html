@@ -20,13 +20,15 @@
 
   <body>
 
-      <nav class="navbar main-nav text-uppercase fixed-top" >
+      <nav class="navbar text-uppercase fixed-top d-flex justify-content-center" >
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">About Festival</a>
+                  <a class="btn nav-link active" href="#">About Festival</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Program</a>
+                <li class="nav-item btn-group">
+                    <button type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" aria-pressed="false">
+                        Program
+                      </button>
                           <div class="dropdown-menu">
                             <a class="dropdown-item" href="#5thAug">5th August</a>
                             <a class="dropdown-item" href="#6thAug">6th August</a>
@@ -35,7 +37,7 @@
                           </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link gettickets" href="#registration">Book your free tickets</a>
+                  <a class="btn nav-link gettickets" href="#registration">Book your free tickets</a>
                 </li>
             </ul> 
       </nav>

@@ -24,10 +24,9 @@ body {
     padding: 2%;
     }
 
-.main-nav{
+.navbar{
     background-color: rgb(20, 20, 20);
     margin: 0%;
-    flex-basis: auto;
     }
 
 #headercontent {
@@ -57,9 +56,9 @@ h2{
 }
 
 .gettickets{
-    border: solid rgb(194, 126, 1);
-    box-sizing: border-box;
-    }
+    border: solid rgb(194, 126, 1) !important;
+}
+
 .card{
         position: relative;
         display: flex;
@@ -91,13 +90,20 @@ a:hover{
 .nav-link{
     color:white;
     text-decoration: none; 
+    text-transform: uppercase;
     }
 .nav-link:hover{
     color:white;
     background-color: #f6ad01ad;
     text-decoration:none;
+    border-color: transparent;
     }
 
+.btn:focus, .btn:active {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      
 .card-deck{
     display: flex;
     }
