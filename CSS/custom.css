@@ -2,9 +2,10 @@ html{
     overflow-y: scroll; 
     box-sizing: border-box;
 }
+
 body {
-    background-repeat: repeat;
     padding-top: 2.6rem;
+
     }
 
 .site-header{
