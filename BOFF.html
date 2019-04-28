@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/custom.css" >  <!--Custom CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!--Icons-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:700" rel="stylesheet"> <!--Header's heading font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!--h5 font-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head> 
@@ -23,14 +25,17 @@
       <nav class="navbar text-uppercase fixed-top d-flex justify-content-center" >
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                  <a class="btn nav-link active" href="#about">About Festival</a>
+                  <a class="btn nav-link active" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn nav-link active" href="#newssection">News</a>
                 </li>
                 <li class="nav-item btn-group">
                     <button type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" aria-pressed="false">
                         Program
                       </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#5thAug">5th August</a>
+                            <a class="dropdown-item" href="#fifth">5th August</a>
                             <a class="dropdown-item" href="#6thAug">6th August</a>
                             <a class="dropdown-item" href="#7thAug">7th August</a>
                             <a class="dropdown-item" href="#8thAug">8th August</a>
@@ -41,6 +46,8 @@
                 </li>
             </ul> 
       </nav>
+
+
     <!--Header-->
       <header class="container-fluid site-header justify-content-center">
           <div id="headercontent" class="row  align-items-center">
@@ -49,58 +56,228 @@
 
               <div class="col-sm-8">
                 <br>
-                  <h1>Brooklyn Outdoor Film Festival</h1>
-                  <p class="lead">Brooklyn Bridge Park 5th - 8th August 2019</p>
-                  <br><br><br>
+                  <h1 id="headertext">Brooklyn Outdoor Film Festival</h1>
+                  <p class="lead">Brooklyn Bridge Park<span id="headingdate"> 5th&nbsp;-&nbsp;8th&nbsp;August&nbsp;2019 </span></p>
+                  <br><br><br><br><br>
               </div>
           </div>          
       </header>
     <!--About section-->
-      <div id="about">
-        <h1>4 Days -12 Movies - Everyone is welcome</h1>
-        <p>Join our bubbly summer festival in the heart of New York's famous location!</p>
-        <p>Brooklyn Outdoor Film Festival and Brooklyn Bridge Park teamed up to bring the high quality open-air entertainment to reality. 
-          Everyday from 5th to 8th August 2019, from 6pm until midnight, we will be showing some of the most amusing movies that will satisfy everyone.
-        The most exciting part? It's free! Nevertheless, due to limited venue space We need to ask you to reverve your free tickets.
-        Follow the link and join us on those warm, technicolor evenings! </p>
+      <div class="container" id="about">
+        <h1 class="aboutheader text-center text-uppercase">4 Days <br>&#x2605;<br>12 Movies <br>&#x2605;<br> Everyone is welcome</h1>
+        <p class="aboutparagraph text-center">Join our bubbly summer festival in the heart of New York's famous location!</p>
+        <p class="text-center">Brooklyn Outdoor Film Festival and Brooklyn Bridge Park teamed up to bring the high quality open-air entertainment to reality. 
+          <br>Everyday from <strong>5th to 8th August 2019</strong> from <strong>6pm until midnight</strong>, we will be showing some of the most amusing movies that will satisfy everyone.
+          <br><br>The most exciting part?<strong> It's free!</strong> Nevertheless, due to limited venue space we need to ask you to <a href="#registration"> reserve your free tickets</a>.
+          <br>Follow the link and join us on those warm evenings! </p>
       </div>
+       <!--News-->
+       <div class="card-deck mx-5 d-none d-lg-flex" id="newssection" >
+          <div id="news"class="row col-sm-12 justify-content-center"><h2>News</h2> </div><br>
+          <div class="card newscard">
+            <div class="card-header text-center">26-06-2019 16:45 </div>
+            <div class="card-body">
+              <img src="images/news/selfiewithfamous.jpg" class="img-fluid" alt="Juliette Binoche">
+              <h4 class="card-title">Meet accomplished filmmakers!</h4>
+              <p class="card-text">We are proud to announce that some of the famous people of film industry will visit our festival for special talks.<br>
+              Make sure to <a href="#registration"> book your free tickets</a> to have a chance of meeting them!</p>
+              <button type="button" class="btn btn-info">More...</button>
+            </div>
+          </div>
+          <div class="card newscard">
+            <div class="card-header text-center">17-04-2019 07:05 </div>
+            <div class="card-body">
+               <img src="images/news/sunnynews.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
+              <h4 class="card-title">Good weather reports!</h4>
+              <p class="card-text">Sunny weather will join our festival! To make sure all our guest are hydrated we'll be sharing free drinking water and our customised eco-friendly water cups. <a href="#registration"> Book your free tickets</a> to claim yours upon arrival!</p>
+              <button type="button" class="btn btn-info">More...</button>
+            </div>
+          </div>
+          <div class="card newscard">
+            <div class="card-header text-center">16-03-2019 12:05 </div>
+            <div class="card-body">
+              <img src="images/news/brooklynpark.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
+              <h4 class="card-title">3...2...1... Registration opened!</h4>
+              <p class="card-text">From today you can <a href="#registration"> book your free tickets</a> to join our festival! Please remember that we have limited amount of participants, you might want to make the decision quickly!</p>
+             <br> <button type="button" class="btn btn-info">More...</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+                        <!--NEWS carousel-->
+                        <div id="carouselExampleIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner active h-25 mw-40" id="5th">
+                                  <div class="carousel-item active">
+                                      <div class="card newscard">
+                                          <div class="card-header text-center">26-06-2019 16:45 </div>
+                                          <div class="card-body">
+                                              <img src="images/news/selfiewithfamous.jpg" class="img-fluid" alt="Juliette Binoche">
+                                              <h4 class="card-title">Meet accomplished filmmakers!</h4>
+                                              <p class="card-text">We are proud to announce that some of the famous people of film industry will visit our festival for special talks.<br>
+                                              Make sure to <a href="#registration"> book your free tickets</a> to have a chance of meeting them!</p>
+                                            <button type="button" class="btn btn-info">More...</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="carousel-item">
+                                      <div class="card newscard">
+                                          <div class="card-header text-center">17-04-2019 07:05 </div>
+                                          <div class="card-body">
+                                             <img src="images/news/sunnynews.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
+                                            <h4 class="card-title">Good weather reports!</h4>
+                                            <p class="card-text">Sunny weather will join our festival! To make sure all our guest are hydrated we'll be sharing free drinking water and our customised eco-friendly water cups. <a href="#registration"> Book your free tickets</a> to claim yours upon arrival!</p>
+                                            <button type="button" class="btn btn-info">More...</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                  
+                                  <div class="carousel-item">
+                                      <div class="card newscard">
+                                          <div class="card-header text-center">16-03-2019 12:05 </div>
+                                          <div class="card-body">
+                                              <img src="images/news/brooklynpark.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
+                                              <h4 class="card-title">3...2...1... Registration opened!</h4>
+                                              <p class="card-text">From today you can <a href="#registration"> book your free tickets</a> to join our festival! Please remember that we have limited amount of participants, you might want to make the decision quickly!</p>
+                                            <button type="button" class="btn btn-info">More...</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                          <!--NEWS carousel end-->
 
 
     <!--Movies-->
       <div id="Program" class="container">
-        <h1 id="5thAug" class="row col-sm-12 justify-content-center">5th August</h1>
-          <section class="row">
+        <!--5th August-->
+      <div id="fifth"  >
+          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex">5th August</h1><br>
+          <section class="row d-none d-lg-flex ">
               <div class="card col-sm-4">
-                  <img src="images/posters/chocolat.jpg" class="card-img-top" alt="Chocolat">
-                    <div class="card-body">
-                      <h5 class="card-title">Chocolat</h5>
-                        <p class="card-text">A woman and her daughter open a chocolate shop in a small French village that shakes up the rigid morality of the community.</p>
-                      <a href="https://www.youtube.com/watch?v=32x33l2sLe8" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
-                      <a href="https://www.imdb.com/title/tt0241303/" class="card-link" target="blank">Read more on IMDB <i class="fab fa-imdb"></i></a>
+                  <div class="card-header text-center">18:00</div>
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Chocolat</h5><br>
+                      <div class="d-flex justify-content-center">
+                          <button type="button"class="btn btn-light">
+                            <a href="https://www.youtube.com/watch?v=32x33l2sLe8" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a></button>
+                          <button type="button"class="btn btn-light"> 
+                            <a href="https://www.imdb.com/title/tt0241303/" class="card-link" target="blank">IMDB reviews <i class="fab fa-imdb"></i></a>
+                          </button>
                     </div>
+                    </div>
+                  <img src="images/posters/chocolat.jpg" class="card-img-top" alt="Chocolat">
+
               </div>
               <div class="card col-sm-4">
-                  <img src="images/posters/chronicles.jpg" class="card-img-top" alt="Chronicles of Narnia">
-                    <div class="card-body">
-                      <h5 class="card-title">The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</h5>
-                        <p class="card-text">Four kids travel through a wardrobe to the land of Narnia and learn of their destiny to free it with the guidance of a mystical lion.</p>
+                  <div class="card-header text-center">20:00</div>
+                  <div class="card-body">
+                      <h5 class="card-title text-center">The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</h5>
+                      <div class="d-flex justify-content-center">
+                          <button type="button"class="btn btn-light">
                       <a href="https://www.youtube.com/watch?v=lWKj41HZBzM" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
-                      <a href="https://www.imdb.com/title/tt0363771/?ref_=ttls_li_tt" class="card-link" target="blank">Read more on IMDB <i class="fab fa-imdb"></i></a>
-                      
+                      </button>
+                      <button type="button"class="btn btn-light">
+                      <a href="https://www.imdb.com/title/tt0363771/?ref_=ttls_li_tt" class="card-link" target="blank">IMDB reviews <i class="fab fa-imdb"></i></a>
+                      </button>
+                      </div>
+              </div>
+                  <img src="images/posters/chronicles.jpg" class="card-img-top" alt="Chronicles of Narnia">
+
+            </div>
+              <div class="card col-sm-4">
+                  <div class="card-header text-center">22:00</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Life Is Beautiful</h5><br>
+                          <div class="d-flex justify-content-center">
+                            <button type="button"class="btn btn-light">
+                              <a href="https://www.youtube.com/watch?v=pAYEQP8gx3w" class="card-link text-center" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
+                            </button>
+                            <button type="button"class="btn btn-light">
+                             <a href="https://www.imdb.com/title/tt0118799/?ref_=nv_sr_1?ref_=nv_sr_1" class="card-link text-center" target="blank">IMDB reviews<i class="fab fa-imdb"></i></a>
+                            </button>
+                          </div>
+                        </div>
+                  <img src="images/posters/lifeisbeautiful.jpg" class="card-img-top" alt="Life is beautiful">
+                  </div>
+            </section>
+      </div>
+                    <!--Carousel 5th August-->
+                    <div id="carouselExampleIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+            <div class="carousel-inner active h-25 mw-40" id="5th">
+
+                <div class="carousel-item active">
+                    <div class="card mx-auto">
+                        <div class="card-header text-center">5th August 18:00</div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Chocolat</h5>
+                            <a href="https://www.youtube.com/watch?v=32x33l2sLe8" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
+                            <a href="https://www.imdb.com/title/tt0241303/" class="card-link" target="blank">IMDB reviews <i class="fab fa-imdb"></i></a>
+                        </div>
+                        <img src="images/posters/chocolat.jpg" class="card-img-top h-25 mw-30" alt="Chocolat">
                     </div>
+                </div>
+
+
+              <div class="carousel-item ">
+                  <div class="card mx-auto">
+                      <div class="card-header text-center">5th August 20:00</div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center">The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</h5>
+                        <a href="https://www.youtube.com/watch?v=lWKj41HZBzM" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
+                        <a href="https://www.imdb.com/title/tt0363771/?ref_=ttls_li_tt" class="card-link" target="blank">IMDB reviews <i class="fab fa-imdb"></i></a>
+                      </div>
+                      <img src="images/posters/chronicles.jpg" class="card-img-top h-25 mw-40" alt="Chronicles of Narnia">
+                  </div>
               </div>
 
-              <div class="card col-sm-4">
-                  <img src="images/posters/lifeisbeautiful.jpg" class="card-img-top" alt="Life is beautiful">
-                    <div class="card-body">
-                      <h5 class="card-title">Life Is Beautiful </h5>
-                      <p class="card-text">When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.</p>
-                      <a href="https://www.youtube.com/watch?v=pAYEQP8gx3w" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
-                      <a href="https://www.imdb.com/title/tt0118799/?ref_=nv_sr_1?ref_=nv_sr_1" class="card-link" target="blank">Read more on IMDB <i class="fab fa-imdb"></i></a>
-                    </div>
+              <div class="carousel-item ">
+                  <div class="card mx-auto">
+                      <div class="card-header text-center">5th August 22:00</div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Life Is Beautiful </h5>
+                          <a href="https://www.youtube.com/watch?v=pAYEQP8gx3w" class="card-link" target="blank">Watch trailer <i class="fab fa-youtube"></i></a>
+                          <a href="https://www.imdb.com/title/tt0118799/?ref_=nv_sr_1?ref_=nv_sr_1" class="card-link" target="blank">IMDB reviews <i class="fab fa-imdb"></i></a>
+                      </div>
+                      <img src="images/posters/lifeisbeautiful.jpg" class="card-img-top h-25 mw-40" alt="Life is beautiful">
+                  </div>
               </div>
-          </section>
-        <h1  id="6thAug" class="row col-sm-12 justify-content-center">6th August</h1>
+
+            </div>
+                              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+          </div>
+        <!--Carousel end-->
+
+          <!--6th August-->
+        <h1 id="6thAug" class="row col-sm-12 justify-content-center">6th August</h1>
           <section class="row">
               <div class="card col-sm-4">
                   <img src="images/posters/bridge.jpg" class="card-img-top" alt="Bridge to Terabithia">
@@ -131,6 +308,7 @@
                     </div>
               </div>
           </section>
+          <!--7th August-->
           <h1 id="7thAug" class="row col-sm-12 justify-content-center">7th August</h1>
           <section class="row">
               <div class="card col-sm-4">
@@ -162,6 +340,7 @@
                     </div>
               </div>
           </section>
+          <!--8th August-->
           <h1  id="8thAug"class="row col-sm-12 justify-content-center">8th August</h1>
           <section class="row">
               <div class="card col-sm-4">
@@ -196,63 +375,38 @@
           </section>
           </div>
 
-      <!--News-->
-      <div class="card-deck" style="margin: 10%" >
-          <h1  id="Announcements"class="row col-sm-12 justify-content-center">Announcements</h1>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Meet accomplished filmmakers!</h4>
-              <p class="card-text">We are proud to announce that some of the famous people of film industry will visit our festival for special talks.<br>
-              Make sure to <a href="#registration"> book your free tickets</a> to have a chance of meeting them!</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Good weather reports!</h4>
-              <p class="card-text">Sunny weather will join our festival! To make sure all our guest are hydrated we'll be sharing free drinking water and our customised eco-friendly water cups. <a href="#registration"> Book your free tickets</a> to claim yours upon arrival!</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">3...2...1... Registration opened!</h4>
-              <p class="card-text">From today you can <a href="#registration"> book your free tickets</a> to join our festival! Please remember that we have limited amount of participants, you might want to make the decision quickly!</p>
-            </div>
-          </div>
-        </div>
-
-        <br>
-    </div>
     <!--Form-->
-        <div class=" container card" id="registration">
+        <div class=" container card col-sm-6" id="registration">
             <h5 class="card-header info-color white-text text-center py-4">
                 <strong>Registration Form</strong>
             </h5>
         
             <div class="card-body">
-                <form class="md-form">
+                <form class="md-form" id="registrationform">
                   <div class="row">
                     <div class="col">
-                            <input type="text" id="FirstName" class="form-control" placeholder="First name" required>
-                            <label>First name</label>
+                        <label>First name</label>
+                        <input type="text" id="FirstName" class="form-control" placeholder="Insert your first name" required>
                     </div>
                     <div class="col">
-                            <input type="text" id="LastName" class="form-control" required>
-                            <label for="LastName">Last name</label>
+                        <label for="LastName">Last name</label>
+                        <input type="text" id="LastName" class="form-control" placeholder="Insert your last name"required>
                     </div>
-                  </div>
+                  </div> <br>
                   <div class="row">
                       <div class="col">
-                            <input type="email" id="email" class="form-control"required>
-                            <label for="email">E-mail</label>
+                          <label for="email">E-mail</label>
+                          <input type="email" id="email" class="form-control" placeholder="Insert your e-mail"required>
                       </div>
                       <div class="col">
-                            <input type="tel" id="phone" class="form-control" pattern="^\d{8}$" required>
-                            <label for="phone">Phone number (8 numeric characters)</label>
+                          <label for="phone">Phone number</label>
+                          <input type="tel" id="phone" class="form-control" pattern="^\d{8}$" placeholder="Insert 8 digits"required>
                       </div>
                     </div>
-
-        <div class="text-center">Choose Festival Dates</div> <br>
-        
+<br><br>
+        <div class="text-center">
+          <span class="font-weight-bold">Choose Festival Dates</span>
+          <br><br>
                     <div class="form-check mb-4">
                         <input type="checkbox" class="form-check-input" id="checkbox">
                         <label class="form-check-label " for="checkbox">5th August</label>
@@ -272,22 +426,12 @@
                         <input type="checkbox" class="form-check-input" id="checkbox">
                         <label class="form-check-label" for="checkbox">8th August</label>
                     </div>
-                    
+                </div> 
 
                     <div class="row">
-                        <div class="col-12">
-                      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" >Submit</button>
+                        <div class="mx-auto">
+                      <button class="btn btn-outline-success btn-rounded btn-block " type="submit" >Submit</button>
                         </div>
-
-                        <script>
-                            function myFunction() {
-                              alert("Submission succesful! You will receive your confirmation shortly via email.");
-                            }
-                            </script>
-        
-                        <hr>
-        
-                        <p> After submission you will receive email confirmation of your booking </p>
                     </div>
         
                 </form>
@@ -296,19 +440,20 @@
         
         </form>
         <br>
+        
     <!--Footer-->
     <footer>
+        <div class="socialmedia d-flex justify-content-center">
+            FOLLOW US:
+          <a class="fab fa-twitter" href="https://twitter.com/" target="blank"></a>
+          <a class="fab fa-instagram" href="https://www.instagram.com"target="blank"></a>
+          <a class="fab fa-facebook" href="https://www.facebook.com/"target="blank"></a>
+        </div>
       <br>
         <a href="https://www.brooklynbridgepark.org/" target="_blank"><img src="images/bbplogo.png" alt="Brooklyn Bridge Park - logo " height="60"></a>
-        <div class="socialmedia">
-            FOLLOW US
-        
-          <a class="fab fa-twitter" href="https://twitter.com/"></a>
-          <a class="fab fa-instagram" href="https://www.instagram.com"></a>
-          <a class="fab fa-facebook" href="https://www.facebook.com/"></a>
-        </div>
+        <a href="http://brooklyn.news12.com/" target="_blank"><img src="images/news12.png" alt="News12 Brooklyn - logo " height="60"></a>
         <br>
-  
+
         <!-- Copyright -->
        <p class="float-right"><a id="back" href="#"><i class="fa fa-angle-up"></i> Back to top</a>
        <div class="footer-copyright text-center py-3">© 2019 Copyright:
