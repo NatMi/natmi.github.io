@@ -267,7 +267,7 @@ footer{
     text-decoration: none;
 }
 
-#fifth, #sixth, #seventh, #eight{
+#fifth, #sixth, #seventh, #eight, #newsy{
     padding-top: 3.5rem;
     font-family: 'Lato', sans-serif;
 }
@@ -282,7 +282,7 @@ footer{
 
 @media (max-width: 767px){
 
-    #fifth, #sixth, #seventh, #eight{
+    #fifth, #sixth, #seventh, #eight #newsy{
             padding-top:25%
     }
 
