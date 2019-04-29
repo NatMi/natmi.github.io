@@ -63,7 +63,7 @@
       </header>
     <!--About section-->
       <div class="container" id="about">
-        <h1 class="aboutheader text-center text-uppercase">4 Days <br>&#x2605;<br>12 Movies <br>&#x2605;<br> Everyone is welcome</h1>
+        <h1 class="aboutheader text-center text-uppercase">4 Days - 12 Movies <br>&#x2605;<br> Everyone is welcome</h1>
           <p class="aboutparagraph text-center">Join our bubbly summer festival in the heart of New York's famous location!</p>
           <p class="text-center">Brooklyn Outdoor Film Festival and Brooklyn Bridge Park teamed up to bring the high quality open-air entertainment to reality. 
             <br>Everyday from <strong>5th to 8th August 2019</strong> from <strong>6pm until midnight</strong>, we will be showing some of the most amusing movies that will satisfy everyone.
@@ -73,7 +73,8 @@
     <!--News-->
     <div id="newsy">
        <div class="card-deck mx-5 d-none d-lg-flex" id="newssection" >
-          <h2  id="newsheading"class="row col-sm-12 justify-content-center">News</h2> <br>
+          <h1  id="newsheading"class="row col-sm-12 justify-content-center"> <span>News <hr></span></h2>
+
           <div class="card newscard">
             <div class="card-body">
               <img src="images/news/selfiewithfamous.jpg" class="img-fluid" alt="Juliette Binoche">
@@ -169,11 +170,18 @@
   </div>
     <!--Movies-->
 
+         <!-- <div class="row col-sm-12 justify-content-center">
+            <span>
+          <h1 id="programdiv">Program</h1>
+          <hr>
+          </span>
+          </div>-->
+
       <div id="Program" class="container">
 
     <!--5th August wide screen-->
       <div id="fifth"  >
-          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex">5th August</h1>
+          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex"><span>5th August <hr></span></h1>
           <section class="row d-none d-lg-flex ">
               <div class="card col-sm-4">
                   <div class="card-header text-center">18:00</div>
@@ -301,7 +309,7 @@
 
     <!--6th August wide screen-->
       <div id="sixth"  >
-        <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex">6th August</h1>
+        <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex"> <span>6th August <hr></span></h1>
         <section class="row d-none d-lg-flex ">
             <div class="card col-sm-4">
                 <div class="card-header text-center">18:00</div>
@@ -429,7 +437,7 @@
 
     <!--7th August wide screen-->
       <div id="seventh"  >
-          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex">7th August</h1>
+          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex"><span>7th August <hr></span></h1>
           <section class="row d-none d-lg-flex ">
               <div class="card col-sm-4">
                   <div class="card-header text-center">18:00</div>
@@ -557,7 +565,7 @@
 
     <!--8th August wide screen-->
       <div id="eight">
-          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex">8th August</h1>
+          <h1 class="row col-sm-12 justify-content-center d-none d-lg-flex"><span>8th August <hr></span></h1>
             <section class="row d-none d-lg-flex ">
               <div class="card col-sm-4">
                   <div class="card-header text-center">18:00</div>
@@ -686,13 +694,12 @@
     </div> <!--Movies section end-->
 
     <!--Form-->
-        <div class="container card col-sm-6" id="registration" action='' method='post'>
+        <div class="container card col-sm-6" id="registration">
             <h5 class="card-header info-color white-text text-center py-4">
                 <strong>Registration Form</strong>
             </h5>
-        
             <div class="card-body">
-                <form class="md-form" id="registrationform">
+                <form class="md-form" id="registrationform" action='#submitalert'>
                   <div class="row">
                     <div class="col">
                         <label>First name</label>
@@ -700,13 +707,13 @@
                     </div>
                     <div class="col">
                         <label for="LastName">Last name</label>
-                        <input type="text" id="LastName" class="form-control" placeholder="Insert your last name"required>
+                        <input type="text" id="LastName" class="form-control" placeholder="Insert your last name" required>
                     </div>
                   </div> <br>
                   <div class="row">
                       <div class="col">
                           <label for="email">E-mail</label>
-                          <input type="email" id="email" class="form-control" placeholder="Insert your e-mail"required>
+                          <input type="email" id="email" class="form-control" placeholder="Insert your e-mail" required>
                       </div>
                       <div class="col">
                           <label for="phone">Phone number</label>
@@ -740,15 +747,13 @@
 
                     <div class="row">
                         <div class="mx-auto">
-                      <button class="btn btn-outline-success btn-rounded btn-block " type="submit" >Submit</button>
+                        <button class="btn btn-outline-success btn-rounded btn-block" type="submit" > Submit</button>
                         </div>
                     </div>
-        
+                    <div id="submitalert">Submission succesful! You will receive an e-mail confirmation shortly.</div>
                 </form>
             </div>
         </div>
-        
-        <br>
         
     <!--Footer-->
       <footer>
