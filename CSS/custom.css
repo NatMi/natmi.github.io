@@ -194,8 +194,8 @@ a:hover{
     text-size-adjust: 5px
     }
 .fa-angle-right, .fa-angle-left{
-color: #f5dc3d;
-font-size: 40px;
+    color: #f5dc3d;
+    font-size: 40px;
 }
 
 .fa-twitter {
@@ -241,7 +241,7 @@ footer{
 #footerlink:hover{
     background-color: white;
     }
-#fifth{
+#fifth,#sixth,#seventh,#eighth{
     padding-top: 3.5rem;
     font-family: 'Lato', sans-serif;
 }
