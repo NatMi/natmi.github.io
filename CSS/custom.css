@@ -9,7 +9,8 @@ body {
     }
 header{
     box-shadow: 0px 5px 10px rgba(90, 71, 43, 0.719);
-}
+    }
+
 .site-header{
     background-image: url(../images/bbp.jpg);
     background-size: cover;
@@ -40,11 +41,12 @@ header{
     margin:0%;
     padding-top:1rem;
     text-align: center;
-    
-    }
+}
+
 .card-link{
     color:black
-    }
+}
+
 #headertext{
     background-color:#ffdd004b;
     font-family: "Arial", sans-serif;
@@ -74,7 +76,7 @@ h1{
     background-color: #20202031;
 }
 
-.gettickets{
+.gettickets, .goup{
     border: solid rgb(194, 126, 1) !important;
 }
 
@@ -133,11 +135,12 @@ h1{
     padding-top:2rem;
     color: #757575;
 }
+
 a{
     color:white;
     text-decoration: none;
+}
 
-    }
 a:hover{
     text-decoration:none;
     }
@@ -173,9 +176,12 @@ a:hover{
         outline: none !important;
         box-shadow: none !important;
       }
-
-.socialmedia{
-    color:white;
+hr{
+    background-color: 
+    #ffdb00
+}
+.socialmedia, .partners{
+    color: rgb(194, 194, 194);
 }
 
 .fab {
@@ -215,17 +221,27 @@ a:hover{
     color:black;
     background-color:yellow 
 }
+
 .fa-angle-up{
-    color: black;
-    }
-    
+    color:white;
+
+}
+
 input::placeholder {
         color: rgba(170, 170, 170, 0.692) !important;
       }
 
+.goup{
+    margin-right:2%;
+}
+
 #back{
-    color:black;
-    }
+    color:white;
+}
+
+#back:hover{
+    text-decoration: none;
+ }
 
 #registration{
     padding-top:2rem;
@@ -237,39 +253,53 @@ footer{
     background-color:black;
     }
 
+.footer-copyright{
+    color:gray;
+}
+
 #footerlink{
-    color: orange;
-    }
+    color:rgb(194, 126, 1);
+    text-decoration: none;
+}
 
 #footerlink:hover{
-    background-color: white;
-    }
+    color:rgb(143, 93, 1);
+    text-decoration: none;
+}
+
 #fifth, #sixth, #seventh, #eight{
     padding-top: 3.5rem;
     font-family: 'Lato', sans-serif;
 }
+
 .carousel-control-next {
     color: goldenrod;
 }
+
 .btn-light{
     background-color:white !important;
 }
 
 @media (max-width: 767px){
+
     #fifth, #sixth, #seventh, #eight{
-        padding-top:25%
+            padding-top:25%
     }
 
     #headercontent{
-        padding-top:2rem;
+            padding-top:2rem;
     }
-    #about{
-    padding-top: 3.5rem
-}
-#registration{
-    padding-top:5rem
-}
-#newssection{
-    padding-top: 4rem;
-}
+
+        #about{
+        padding-top: 3.5rem
+    }
+
+    #registration{
+        padding-top:5rem
+    }
+
+    #newssection{
+        padding-top: 4rem;
+    }
+
 }
