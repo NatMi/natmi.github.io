@@ -144,6 +144,12 @@ a{
 a:hover{
     text-decoration:none;
     }
+.reglink{
+    color:#42b4d1;
+    }
+.reglink:visited{
+    color:#42b4d1;
+}
 
 #about{
     font-family: 'Lato', sans-serif;
