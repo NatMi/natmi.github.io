@@ -61,8 +61,8 @@
       </header>
     <!--About section-->
       <div class="container" id="about">
-        <h1 class="aboutheader text-center text-uppercase">4 evenings with fantastic movies <br>&#x2605;<br> Everyone is welcome</h1>
-          <p class="aboutparagraph text-center">Join our bubbly summer festival in the heart of New York's famous location!</p>
+        <h1 id="aboutheader" class="text-center text-uppercase">4 evenings with fantastic movies <br>&#x2605;<br> Everyone is welcome</h1>
+          <p id="aboutparagraph" class="text-center">Join our bubbly summer festival in the heart of New York's famous location!</p>
           <p class="text-center">Brooklyn Outdoor Film Festival and Brooklyn Bridge Park teamed up to bring the high quality open-air entertainment to reality. 
             <br>Everyday from <strong>5th to 8th August 2019</strong> from <strong>6pm until midnight</strong>, we will be showing some of the most amusing movies that will satisfy everyone.
             <br><br>The most exciting part?<strong> It's free!</strong> Nevertheless, due to limited venue space we need to ask you to <a class="reglink" href="#registration"> reserve your free tickets</a>.
@@ -70,7 +70,7 @@
       </div>
     <!--News-->
     <div id="newsy">
-       <div class="card-deck mx-5 d-none d-lg-flex" id="newssection" >
+       <div  id="newssection" class="card-deck mx-5 d-none d-lg-flex" >
           <h1  id="newsheading"class="row col-sm-12 justify-content-center"> <span>News <hr></span></h1>
 
           <div class="card newscard">
@@ -87,7 +87,7 @@
           <div class="card newscard">
             <div class="card-body">
                <img src="images/news/sunnynews.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
-              <h4 class="card-title mt-2">Good weather reports!</h4>
+              <h4 class="card-title mt-2">Good weather reports! Summer freebies</h4>
               <p class="card-text"><small class="text-muted">17-04-2019 07:05 </small></p>
               <hr>
               <p class="card-text">Sunny weather will join our festival! To make sure all our guest are hydrated we'll be sharing free drinking water and our customised eco-friendly water cups. <a class="reglink" href="#registration"> Book your free tickets</a> to claim yours upon arrival!</p>
@@ -109,14 +109,10 @@
 
     <!--NEWS carousel-->
         <div id="carouselNewsIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
-              <ol class="carousel-indicators">
-                  <li data-target="#carouselNewsIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselNewsIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselNewsIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner active h-25 mw-40" id="newssection">
+                <div  id="newssection" class="carousel-inner active">
                     <div class="carousel-item active">
                         <div class="card newscard">
+                            <div class="card-header text-center">News</div>
                             <div class="card-body">
                                 <img src="images/news/selfiewithfamous.jpg" class="img-fluid" alt="Juliette Binoche">
                                 <h4 class="card-title mt-2">Meet accomplished filmmakers!</h4>
@@ -125,15 +121,16 @@
                                 <p class="card-text">We are proud to announce that some of the famous people of film industry will visit our festival for special talks.<br>
                                 Make sure to <a href="#registration"> book your free tickets</a> to have a chance of meeting them!</p>
                               <button type="button" class="btn btn-info float-right">More...</button>
-                            </div>
                         </div>
+                      </div>
                     </div>
-    
+                    
                     <div class="carousel-item">
                         <div class="card newscard">
+                            <div class="card-header text-center">News</div>
                             <div class="card-body">
                                 <img src="images/news/sunnynews.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
-                              <h4 class="card-title mt-2">Good weather reports!</h4>
+                              <h4 class="card-title mt-2">Good weather reports! Summer freebies</h4>
                               <p class="card-text"><small class="text-muted">17-04-2019 07:05 </small></p>
                               <hr>
                               <p class="card-text">Sunny weather will join our festival! To make sure all our guest are hydrated we'll be sharing free drinking water and our customised eco-friendly water cups. <a href="#registration"> Book your free tickets</a> to claim yours upon arrival!</p>
@@ -143,7 +140,8 @@
                     </div>
     
                     <div class="carousel-item">
-                        <div class="card newscard">
+                          <div class="card newscard">
+                            <div class="card-header text-center">News</div>
                             <div class="card-body">
                                 <img src="images/news/brooklynpark.jpg" class="img-fluid" alt="Brooklyn Bridge Park">
                                 <h4 class="card-title mt-2">3...2...1... Registration opened!</h4>
@@ -167,14 +165,6 @@
     <!--NEWS carousel end-->
   </div>
     <!--Movies-->
-
-         <!-- <div class="row col-sm-12 justify-content-center">
-            <span>
-          <h1 id="programdiv">Program</h1>
-          <hr>
-          </span>
-          </div>-->
-
       <div id="Program" class="container">
 
     <!--5th August wide screen-->
@@ -232,12 +222,7 @@
     <!--5th wide screen end-->
 
     <!--Carousel 5th August-->
-                    <div id="carouselFifthIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#carouselFifthIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselFifthIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselFifthIndicators" data-slide-to="2"></li>
-            </ol>
+          <div id="carouselFifthIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
             <div class="carousel-inner active h-25 mw-40" id="5th">
                 <div class="carousel-item active">
                     <div class="card mx-auto">
@@ -361,11 +346,6 @@
 
     <!--Carousel 6th August-->
       <div id="carouselSixthIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselSixthIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselSixthIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselSixthIndicators" data-slide-to="2"></li>
-          </ol>
           <div class="carousel-inner active h-25 mw-40" id="6th">
               <div class="carousel-item active">
                   <div class="card mx-auto">
@@ -489,11 +469,6 @@
 
     <!--Carousel 7th August-->
       <div id="carouselSeventhIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#carouselSeventhIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselSeventhIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselSeventhIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner active h-25 mw-40" id="7th">
                 <div class="carousel-item active">
                     <div class="card mx-auto">
@@ -617,11 +592,6 @@
 
     <!--Carousel 8th August-->
       <div id="carouselEightIndicators" class="carousel slide container d-block d-lg-none" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#carouselEightIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselEightIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselEightIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner active h-25 mw-40" id="8th">
                 <div class="carousel-item active">
                     <div class="card mx-auto">
@@ -733,8 +703,8 @@
                     </div>
         
                     <div class="form-check mb-4">
-                        <input type="checkbox" class="form-check-input" id="checkbox">
-                        <label class="form-check-label" for="checkbox">7th August</label>
+                        <input type="checkbox" class="form-check-input" id="checkbox" disabled>
+                        <label id="notickets" class="form-check-label text-muted" for="checkbox">7th August</label>
                     </div>
 
                     <div class="form-check mb-4">
@@ -779,7 +749,7 @@
                 <hr>
           </div>
 
-          <div class="btn float-right mr-3 goup">
+          <div id="goup" class="btn float-right mr-3">
               <a id="back" href="#"><i class="fa fa-angle-up"></i> Back to top</a>
             </div>
 

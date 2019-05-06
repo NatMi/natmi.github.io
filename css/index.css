@@ -66,6 +66,10 @@ h1{
     padding-top:2rem;
     word-spacing: 1rem;
 }
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
 
 .card-title{
     font-family: 'Montaga', serif;
@@ -76,7 +80,7 @@ h1{
     background-color: #20202031;
 }
 
-.gettickets, .goup{
+.gettickets, #goup{
     border: solid rgb(194, 126, 1) !important;
 }
 
@@ -144,9 +148,11 @@ a{
 a:hover{
     text-decoration:none;
     }
+
 .reglink{
     color:#42b4d1;
     }
+    
 .reglink:visited{
     color:#42b4d1;
 }
@@ -157,12 +163,12 @@ a:hover{
     padding-top: 1rem;
     }
 
-.aboutheader{
+#aboutheader{
     color: rgba(197, 120, 4, 0.966);
     line-height: 4rem;
     text-shadow: 1px 1px #472e009d;
 }
-.aboutparagraph{
+#aboutparagraph{
     padding-top: 2rem;
 }
 
@@ -230,7 +236,6 @@ hr{
 
 .fa-angle-up{
     color:white;
-
 }
 
 input::placeholder {
@@ -255,6 +260,9 @@ input::placeholder {
     margin-top: 5rem;
     border:solid 1px rgba(109, 109, 109, 0.445) !important;
     }
+#notickets{
+    text-decoration:line-through;
+}
 
 footer{
     background-color:black;
